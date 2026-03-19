@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가위바위보</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="item" onclick="playGame('가위')">
+        <img src="../images/sissor.png" alt="가위" />
+        <h3>가위</h3>
+      </div>
+
+      <div class="item" onclick="playGame('바위')">
+        <img src="../images/rock.png" alt="바위" />
+        <h3>바위</h3>
+      </div>
+
+      <div class="item" onclick="playGame('보')">
+        <img src="../images/paper.png" alt="보" />
+        <h3>보</h3>
+      </div>
+    </div>
+
+    <div class="result-board" id="resultText">가위 바위 보~</div>
+  </body>
+</html>

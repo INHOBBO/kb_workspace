@@ -1,0 +1,27 @@
+.game-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.item {
+  text-align: center;
+}
+
+.item:hover {
+  transform: scale(1.1);
+  background-color: yellow;
+}
+
+.item img {
+  width: 150px;
+  height: 200px;
+  border: 2px solid;
+}
+.result-board {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: bold;
+}

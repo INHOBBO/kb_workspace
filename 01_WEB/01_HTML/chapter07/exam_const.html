@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 재할당 불가!!! 상수임~ 구역 단위
+      const a = 100;
+      console.log(a); // 100
+      {
+        const a = 200; // 위에 a와 다른 값임!
+        a = 300; //  재할당은 절대 안됨!
+        console.log(a);
+      }
+    </script>
+  </body>
+</html>

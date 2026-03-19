@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>랜덤 숫자 덧셈 퀴즈</title>
+  </head>
+  <body>
+    <h1>숫자 퀴즈</h1>
+    <p>새로고침(F5)을 누를 때마다 새로운 문제가 나옵니다.</p>
+
+    <h2 id="resultText"></h2>
+
+    <script>
+      let num1 = Math.floor(Math.random() * 50) + 1;
+      let num2 = Math.floor(Math.random() * 50) + 1;
+
+      let answer = num1 + num2;
+
+      let input = prompt(`${num1} + ${num2} 은?`);
+
+      let result = document.getElementById('resultText');
+
+      if (Number(input) === answer) {
+        alert('정답입니다!');
+        result.innerText = '정답입니다!';
+      } else if (Number(input) !== answer && Number(input) === 0) {
+        alert(`틀렸습니다! 정답은 ${answer}입니다.`);
+        result.innerText = `아쉽네요. 정답은 ${answer}였습니다.`;
+      } else if (Number(input) === 0) {
+        result.innerText = '답을 해주세요.';
+      }
+    </script>
+  </body>
+</html>

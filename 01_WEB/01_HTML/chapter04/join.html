@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>회원가입</legend>
+        <table>
+          <tr>
+            <td><label for="id">사용자 ID</label></td>
+            <td><input id="id" name="id" type="text" /></td>
+          </tr>
+          <tr>
+            <td><label for="password">비밀번호</label></td>
+            <td><input id="password" name="password" type="password" /></td>
+          </tr>
+          <tr>
+            <td><label for="password">비밀번호 확인</label></td>
+            <td><input id="password" name="password" type="password" /></td>
+          </tr>
+          <tr>
+            <td><label for="username">이름</label></td>
+            <td><input id="username" name="username" type="text" /></td>
+          </tr>
+          <tr>
+            <td>성별</td>
+            <td>
+              <input id="man" name="gender" type="radio" value="m" />
+              <label for="man">남</label>
+              <input id="woman" name="gender" type="radio" value="w" />
+              <label for="woman">여</label>
+            </td>
+          </tr>
+          <tr>
+            <td>취미</td>
+            <td>
+              <input id="soccer" name="hobby" type="checkbox" value="soccer" />
+              <label for="soccer">축구</label>
+              <input
+                id="baseball"
+                name="hobby"
+                type="checkbox"
+                value="bassball"
+              />
+              <label for="baseball">야구</label>
+              <input
+                id="valleyball"
+                name="hobby"
+                type="checkbox"
+                value="valleyball"
+              />
+              <label for="valleyball">배구</label>
+              <input
+                id="basketball"
+                name="hobby"
+                type="checkbox"
+                value="basketball"
+              />
+              <label for="basketball">농구</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">email</label></td>
+            <td><input id="email" name="email" type="email" /></td>
+          </tr>
+          <tr>
+            <td>역할</td>
+            <td>
+              <select>
+                <option value="admin">ADMIN</option>
+                <option value="manager">관리자</option>
+                <option value="user">일반회원</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <input type="submit" value="확인" />
+        <input type="reset" value="다시쓰기" />
+      </fieldset>
+    </form>
+  </body>
+</html>
