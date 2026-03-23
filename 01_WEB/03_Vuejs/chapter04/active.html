@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue :class 예제</title>
+    <style>
+      .active {
+        background-color: green;
+        color: white;
+      }
+      .inactive {
+        background-color: gray;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <button :class="isActive ? 'active' : 'inactive'" @click="toggle">
+        {{ isActive ? '활성' : '비활성' }}
+      </button>
+    </div>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script>
+      let vm = Vue.createApp({
+        data() {
+          return {
+            isActive: false,
+          };
+        },
+        methods: {
+          toggle() {
+            this.isActive = !this.isActive;
+          },
+        },
+      }).mount('#app');
+    </script>
+  </body>
+</html>
