@@ -16,7 +16,7 @@ export default {
   methods: {
     handleClick() {
       // 위에 함수 먼저 쓰고! 음..! 부모님에게 넘겨줘야해!! methods! 하고 emit!
-      this.$emit('select', this.imgae); // ('이벤트명', 값) 부모님에게 전달하는 이벤트명은 select!! 이름을 정하는 곳
+      this.$emit('select', this.image); // ('이벤트명', 값) 부모님에게 전달하는 이벤트명은 select!! 이름을 정하는 곳
       // image는 props에서 받는거니깡
     },
   },
