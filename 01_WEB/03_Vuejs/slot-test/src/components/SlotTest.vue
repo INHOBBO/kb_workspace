@@ -18,11 +18,11 @@
 </template>
 
 <script>
-import CheckBox1 from './CheckBox1.vue';
+import CheckBox2 from './CheckBox2.vue';
 
 export default {
-  name: 'NoSlotTest',
-  components: { CheckBox1 },
+  name: 'SlotTest',
+  components: { CheckBox2 },
   data() {
     return {
       items: [
