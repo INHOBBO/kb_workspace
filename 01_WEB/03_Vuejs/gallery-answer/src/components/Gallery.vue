@@ -8,8 +8,8 @@
 <script>
 import GalleryBig from './GalleryBig.vue';
 import GalleryList from './GalleryList.vue';
-// 위에 :image는 저기서 이름을 정한거임. 야 Big아 selectImage.url가져가라!
-// 위에 :images는 저기서 이름을 정한거임. 뒤에 images는 밑에 data()값 GalleryList에서는 이름으로 정한 images로 쓰면 됨~ props로 받아야징
+// 위에 :image는 저기서 이름을 정한거임. GalleryBig.vue야, selectImage.url가져가라! Big에서 :image에 image를 props로 가져감
+// 위에 :images는 저기서 이름을 정한거임. 뒤에 images는 밑에 data()값, GalleryList에서는 이름으로 정한 images로 쓰면 됨~ props로 받아야징
 // 위에 changeImage는 저기서 이름 정한거임 다시 methods로 잡자! 이건 공식급.
 
 // 동적으로 사용할겁니다! 고정된거 아님. 우리는 Big으로 보낼겁니다.

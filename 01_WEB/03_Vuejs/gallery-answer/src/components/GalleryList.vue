@@ -16,7 +16,7 @@ import GalleryListItem from './GalleryListItem.vue';
 
 export default {
   components: { GalleryListItem },
-  props: ['images'], // 위에 템플릿에 images는 이거 쓰는거임
+  props: ['images'], // Gallery.vue에서 :images로 준거 props로 받아옴. 여기 썼으니까 위에 images쓸 수 있음. 위에 템플릿에 images는 이거 쓰는거임
   methods: {
     selectImage(image) {
       // image는 listitem.vue에서 this.image할때 그 image임!
