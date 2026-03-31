@@ -1,0 +1,25 @@
+.container {
+  border: 2px solid black;
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-direction: column;
+  flex-direction: row-reverse;
+  flex-direction: column-reverse; */
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+  /* align-items: baseline; */
+}
+.item {
+  border: 1px solid black;
+  flex: 1;
+  width: 100px;
+}
+
+.item1 {
+  background: red;
+  flex-grow: 1;
+}
+.item2 {
+  background: orange;
+  flex-grow: 1;
+}

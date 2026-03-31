@@ -11,7 +11,7 @@
 import { ref } from 'vue';
 
 export default {
-  name: 'Calc',
+  name: 'Calc2',
   setup() {
     const x = ref(10);
     const y = ref(20);
