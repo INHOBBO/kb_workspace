@@ -42,7 +42,7 @@ const deleteUsers = async (id) => {
   await axios.delete(`/api/users/${id}`);
 
   const index = users.findIndex((user) => user.id === id);
-  users.splice(index, 1);
+  if (index !== -1) users.splice(index, 1);
 };
 </script>
 
@@ -50,4 +50,5 @@ const deleteUsers = async (id) => {
 button {
   margin-left: 10px;
 }
+
 </style>
