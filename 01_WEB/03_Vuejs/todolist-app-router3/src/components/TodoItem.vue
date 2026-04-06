@@ -9,7 +9,7 @@
     <span
       :class="todoItem.done ? 'todo-done pointer' : 'pointer'"
       @click="toggleDone(todoItem.id)"
-    >
+    >   
       {{ todoItem.todo }}
       {{ todoItem.done ? '(완료)' : '' }}
     </span>
