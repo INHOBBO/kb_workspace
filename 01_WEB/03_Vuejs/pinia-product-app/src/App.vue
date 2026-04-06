@@ -1,11 +1,11 @@
-<script setup></script>
+<script setup>
+import ProductForm from './components/ProductForm.vue';
+import ProductList from './components/ProductList.vue';
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <div>
+    <ProductForm />
+    <ProductList />
+  </div>
 </template>
-
-<style scoped></style>
